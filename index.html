@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the breed type!</title>
+
+	<link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    
+    <section>
+        <h3>Can you guess the breed of the dog?</h3>
+    </section>
+
+    <button id="begin">Lets play!</button>
+
+    <section id="gameTime" style="display: none;">
+        <section>
+            <h3>Scoreboard</h3>
+        </section>
+        <section id="image">
+            <img src="" alt="">
+        </section>
+    
+        <section id="scoreboard">
+            <span id="playerScore"></span>
+            <span id="totalQuestions"></span>
+        </section>
+        <section class="input">
+            <label for="guess">What is your guess?</label>
+            <input type="text" id="guess">
+            <input type="submit" id="takeTheGuess" value="Risk it!">
+            
+        </section>
+    </section>
+    
+
+    <script type="text/javascript" src="public/js/main.js"></script>
+</body>
+</html>

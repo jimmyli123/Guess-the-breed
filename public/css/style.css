@@ -2,3 +2,59 @@
     display: flex;
     height: 3rem;
 }
+
+body {
+    
+    margin-top: 5rem;
+    text-align: center;
+    background-color: hsl(131, 46%, 38%);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+div {
+    background-color: hsl(122, 16%, 17%);
+    display:block;
+    max-width: 700px;
+    max-height:800px;
+    margin: auto;
+    border: 5px solid hsl(94, 41%, 32%);
+    border-radius: 30px;
+}
+
+#intro {
+    font-size:2rem;
+}
+#image {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+}
+
+#scoreboard {
+    display: block;
+    height: 75px;
+    /* text-align: center; */
+}
+
+.score {
+    display: block;
+}
+.score span {
+    margin-left:50px;
+    margin-right: 50px;
+}
+
+.label span {
+    padding: 5px;
+}
+
+#result {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+#guessLabel {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}

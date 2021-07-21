@@ -6,37 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the breed type!</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
+    <div>
+
     
     <section>
-        <h3>Can you guess the breed of the dog?</h3>
+        <h3 id="intro">Can you guess the breed of the dog?</h3>
     </section>
 
     <button id="begin">Lets play!</button>
 
     <section id="gameTime" style="display: none;">
-        <section>
-            <h3>Scoreboard</h3>
-        </section>
+        
         <section id="image">
             <img src="" alt="">
         </section>
+        <section>
+            <h3>Scoreboard</h3>
+        </section>
     
         <section id="scoreboard">
-            <span id="playerScore"></span>
-            <span id="totalQuestions"></span>
+            <section class="score">
+                <span id="playerScore"></span>
+                <span id="totalQuestions"></span>
+            </section>
+            <section class="label">
+                <span>Correct Guesses</span>
+                <span>Total Guesses</span>
+            </section>
+            
         </section>
         <section class="input">
-            <label for="guess">What is your guess?</label>
+            <label for="guess" id="guessLabel">What is your guess?</label>
             <input type="text" id="guess">
             <input type="submit" id="takeTheGuess" value="Risk it!">
             
         </section>
+        <span id="result">
+
+        </span>
     </section>
-    
+    </div>
 
     <script type="text/javascript" src="public/js/main.js"></script>
 </body>
